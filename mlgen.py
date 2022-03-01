@@ -6,9 +6,9 @@ import random
 def get_ml_phrase(wordlist):
     msg = ""
     cong = ["e", "o", "se", "ma", "in", "da", "per", "su"]
+    ind = random.randint(1, 7)
     for num in range(random.randint(3, 10)):
         sub = random.choice(wordlist)
-        ind = random.randint(1, 7)
         if num % ind == 0:
             if num == 0:
                 msg += random.choice(cong)
