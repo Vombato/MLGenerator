@@ -1,4 +1,5 @@
 # pylint: disable=missing-module-docstring
+# pylint: disable=C0116
 import random
 
 
