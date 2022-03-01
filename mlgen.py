@@ -1,6 +1,6 @@
 import random
 
-def getMariaLuisaPhrase(wordlist):
+def getMLPhrase(wordlist):
 	msg = ""
 	cong = ["e", "o", "se", "ma", "in"]
 	for n in range(random.randint(3, 10)):
@@ -18,11 +18,8 @@ def getMariaLuisaPhrase(wordlist):
 def main():
 	my_file = open("parole.txt", "r")
 	data = my_file.read()
-
-	# replacing end of line('/n') with ' ' and
-	# splitting the text it further when '.' is seen.
 	list = data.split("\n")
-	print(getMariaLuisaPhrase(list))
+	print(getMLPhrase(list))
 	
 
 if __name__ == "__main__":
