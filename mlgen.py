@@ -25,11 +25,10 @@ def get_ml_phrase(wordlist):
 
 
 def add_remove_random_letters(word):
-    if random.randint(0, 1) == 0:
-        word = word[:random.randint(0, len(word)-1)] + random.choice(string.ascii_letters) \
+    if random.randint(0, 4) == 0:
+        word = word[:random.randint(0, len(word)-1)] + random.choice(string.ascii_lowercase) \
             + word[random.randint(0, len(word)-1):]
-        return word + random.choice(["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", \
-            "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z"])
+        return word + random.choice(string.ascii_lowercase)
     return word[:-random.randint(1,2)]
 
 def get_word(wordlist):
